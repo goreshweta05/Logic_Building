@@ -1,0 +1,31 @@
+//Dynamic function
+#include<stdio.h>
+
+void Display(int iFrequency)
+{
+    int iCnt = 0;
+
+    for(iCnt = 1; iCnt <= iFrequency; iCnt ++)
+    {
+        printf("Jay Ganesh\n");
+    }
+}
+
+int main()
+{
+    int iCount = 0;
+
+    //Filter
+    if(iFrequency < 0)
+    {
+        printf("Invalid Input");
+        return;
+    }
+
+    printf("Enter the frequency: \n");
+    scanf("%d",&iCount);
+
+    Display(iCount);    
+    
+    return 0;
+}     
